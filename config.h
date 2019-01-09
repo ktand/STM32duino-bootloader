@@ -369,6 +369,15 @@
     /* CRISTAL 12MHz */
     #define XTAL12M     1
 
+#elif defined TARGET_GENERIC_F103_PC13_BUTTON_PB6
+
+    #define LED_BANK            GPIOC
+    #define LED_PIN             13
+    #define LED_ON_STATE        0
+
+    #define BUTTON_BANK GPIOB
+    #define BUTTON_PIN 6
+    #define BUTTON_PRESSED_STATE 0
 
 #else
     #error "No config for this target"
